@@ -4,6 +4,6 @@ deve retornar 10, pois 1+2+3+4 = 10)*/
 
 
 function somarAte(){
-
+oninput
 }
 

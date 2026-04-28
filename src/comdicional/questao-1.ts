@@ -2,19 +2,18 @@
  Par ou Ímpar
  Positivo ou Negativo */
 
-function Numeros(){
-let numero:number = Number(prompt(" informe o numero : "));
 
-if(numero%2 == 0){
+let numero1:number = Number(prompt(" informe o numero : "))
+
+if(numero1 %2 == 0){
     console.log(" numero Par")
 }
 else{
     console.log(" numero Impar")
 }
-if(numero > 0){
+if(numero1 > 0){
     console.log(" numero Positivo")
 }
 else{
     console.log("numero Negativo")
-}
 }

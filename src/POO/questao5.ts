@@ -25,5 +25,9 @@ class Pessoa{
         this.altura = altura
 
     }
+    Envelhecer():void{
+        
+
+    }
     
 }

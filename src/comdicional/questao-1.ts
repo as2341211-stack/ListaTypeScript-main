@@ -1,7 +1,8 @@
-/**Crie um programa que leia um número e informe se ele é:
- Par ou Ímpar
- Positivo ou Negativo */
+// *Crie um programa que leia um número e informe se ele é:
+//  Par ou Ímpar
+//  Positivo ou Negativo 
 
+export function queste1():void{
 
 let numero1:number = Number(prompt(" informe o numero : "))
 
@@ -16,4 +17,6 @@ if(numero1 > 0){
 }
 else{
     console.log("numero Negativo")
+}
+
 }

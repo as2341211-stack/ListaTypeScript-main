@@ -62,7 +62,7 @@ class ProjetoVerde extends Projeto{
         console.log("Bem vindo ao projeto verde, filho do projeto Original")
 
     }
-    public calculodeMedia():number{
+    public calculodeMedia(){
         let contador = 0,media = 0,acum = 0,op = 0
 
         op = Number(prompt("Informe um valor ou -1 para sair: "))
@@ -70,6 +70,7 @@ class ProjetoVerde extends Projeto{
 
         }
 
-        return
+    
     }
 }
+

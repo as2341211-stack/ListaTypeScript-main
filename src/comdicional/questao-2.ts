@@ -14,7 +14,7 @@ i) Setembro (9): Inverno
 j) Outubro (10): Primavera
 k) Novembro (11): Primavera
 l) Dezembro (12): Primavera */
-
+export function questao2():void{
 let mes:number = 0
 let estacao:string
 mes = Number(prompt("informe o mes :"))
@@ -35,3 +35,4 @@ else{
 }
 
 console.log(" A estação do ano correspodente ao mês " + mes + " é " + estacao)
+}

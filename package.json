@@ -1,5 +1,5 @@
 {
-  "name": "listatypescript-main",
+  "name": "listatypescript",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,17 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/as2341211-stack/ListaTypeScript-main.git"
+    "url": "git+https://github.com/falecomdanielramos-byte/ListaTypeScript.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "bugs": {
-    "url": "https://github.com/as2341211-stack/ListaTypeScript-main/issues"
+    "url": "https://github.com/falecomdanielramos-byte/ListaTypeScript/issues"
   },
-  "homepage": "https://github.com/as2341211-stack/ListaTypeScript-main#readme",
+  "homepage": "https://github.com/falecomdanielramos-byte/ListaTypeScript#readme",
   "devDependencies": {
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.3"
   }
 }

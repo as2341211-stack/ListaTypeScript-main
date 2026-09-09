@@ -25,9 +25,32 @@ class Pessoa{
         this.altura = altura
 
     }
-    Envelhecer():void{
-        
+    
+    Envelhecer(): void {
+       
+        this.idade = this.idade + 1
+        if(this.idade < 21){
 
+           this.Crecer(0.05)
+
+        }
+    }
+    
+    Engordar(quilo:number): void{
+        
+        this.peso = this.peso + quilo
+
+    }
+
+    Emagrecer(quilo:number): void{
+
+        this.peso = this.peso - quilo 
+
+    }
+
+    Crecer(cetimetro:number): void{
+
+        this.altura = this.altura + cetimetro
     }
     
 }

@@ -4,3 +4,42 @@ alterarNome, depósito e saque. No construtor, saldo é opcional, com valor defa
 atributos são obrigatórios. Por fim, faça com que esse sistema interaja com o usuário permitido que
 ele, depois de cadastrar as suas informações, possa usar os métodos disponíveis.*/
 
+class conta {
+    numero:string
+    nome:string
+    saldo:number
+
+    constructor(
+        
+        nume:string,
+        nome:string,
+        saldo:number = 0
+    ){
+
+        this.numero = nume
+        this.nome = nome
+        this.saldo = saldo
+
+    }
+
+    AlterarNome(NovoNome:string): void {
+        
+        this.nome = NovoNome
+
+    }
+
+    Deposito(NovoValor:number): void {
+
+        this.saldo = this.saldo + NovoValor
+
+    }
+
+    Saldo(retirado:number): void {
+
+        this.saldo = this.saldo - retirado
+
+    }
+
+    
+
+}

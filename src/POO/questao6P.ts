@@ -4,7 +4,10 @@ alterarNome, depósito e saque. No construtor, saldo é opcional, com valor defa
 atributos são obrigatórios. Por fim, faça com que esse sistema interaja com o usuário permitido que
 ele, depois de cadastrar as suas informações, possa usar os métodos disponíveis.*/
 
-class conta {
+
+
+export function queste6():void{
+class Conta {
     numero:string
     nome:string
     saldo:number
@@ -40,6 +43,13 @@ class conta {
 
     }
 
+    Executa():void{
+
+    }
     
+
+}
+
+let saldo:number,numero:string,nome:string
 
 }

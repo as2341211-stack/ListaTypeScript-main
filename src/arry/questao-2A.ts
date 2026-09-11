@@ -7,6 +7,7 @@ d) Calcule e mostre a soma das notas.
 e) Calcule e mostre a média das notas.
 f) Calcule e mostre a quantidade de notas acima da média calculada.*/
 
+export function queste2():void{
 let notas: number[] = [];
 let soma1 = 0;
 
@@ -35,3 +36,4 @@ for (let n of notas) {
     if (n > media) acima++;
 }
 console.log("Notas acima da média:"+ acima);
+}

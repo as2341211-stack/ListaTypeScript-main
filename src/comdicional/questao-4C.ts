@@ -3,10 +3,11 @@
 ● ‘Primeiro é maior’, caso o primeiro seja maior que o segundo;
 ● ‘Segundo maior’, caso o segundo seja maior que o primeiro.*/
 
+export function queste4(): void{
 let nm2:number = Number(prompt("informe o primeiro numero: "))
 let nm3:number = Number(prompt("informe o segundo numero: "))
 
-if(nm2 === num3){
+if(nm2 === nm3){
     console.log("Números iguais")
 }
 else if(nm2 > nm3){
@@ -14,4 +15,5 @@ else if(nm2 > nm3){
 }
 else{
     console.log("Segundo é maior")
+}
 }

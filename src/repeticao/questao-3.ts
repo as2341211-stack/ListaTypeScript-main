@@ -8,30 +8,30 @@ recebeu;
 ● O percentual de funcionários homens e mulheres cadastrados.*/
 
 
-let salahr:number = 0
-let numF:number = 0,numM:number = 0
+let salahr: number = 0
+let numF: number = 0, numM: number = 0
 
-let nom2:string = String(prompt("Informe o nome: "))
-let clt:number = Number(prompt("Horas de trabalho: "))
+let nom2: string = String(prompt("Informe o nome: "))
+let clt: number = Number(prompt("Horas de trabalho: "))
 salahr = Number(prompt("Informe o salario por hora: "))
-let SexGruOper:string = String(prompt(" Informe o sexo (F para feminino e M para Masculino: ")).toUpperCase()
-let PerUsu:string = String(prompt("Você que continuar (S para sim e N para não): ")).toUpperCase()
-while( PerUsu != "S"){
-nom2 = String(prompt("Informe o nome: "))
-clt = Number(prompt("Horas de trabalho: "))
-salahr = Number(prompt("Informe o salario por hora: "))
-SexGruOper = String(prompt(" Informe o sexo (F para feminino e M para Masculino: ")).toUpperCase()
-PerUsu = String(prompt("Você que continuar (S para sim e N para não): ")).toUpperCase()
+let SexGruOper: string = String(prompt(" Informe o sexo (F para feminino e M para Masculino: ")).toUpperCase()
+let PerUsu: string = String(prompt("Você que continuar (S para sim e N para não): ")).toUpperCase()
+while (PerUsu != "S") {
+    nom2 = String(prompt("Informe o nome: "))
+    clt = Number(prompt("Horas de trabalho: "))
+    salahr = Number(prompt("Informe o salario por hora: "))
+    SexGruOper = String(prompt(" Informe o sexo (F para feminino e M para Masculino: ")).toUpperCase()
+    PerUsu = String(prompt("Você que continuar (S para sim e N para não): ")).toUpperCase()
 
-switch(SexGruOper){
-    case "F":
-        numF++
-    break
-    case "N":
-        numM++
-    break
+    switch (SexGruOper) {
+        case "F":
+            numF++
+            break
+        case "N":
+            numM++
+            break
 
-}
-salahr++
+    }
+    salahr++
 
 }

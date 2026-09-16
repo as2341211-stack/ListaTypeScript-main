@@ -4,13 +4,13 @@ import { queste2 as quest2C } from "./comdicional/questao-2C.js";
 import { queste3 as quest3C } from "./comdicional/questao-3C.js";
 import { queste4 as quest4C } from "./comdicional/questao-4C.js";
 
-//POO
-import { queste6 as quest6P } from "./POO/questao6P.js";
-
 //Arry
 import { queste1 as quest1A } from "./arry/questao-1A.js";
 import { queste9 as quest9A } from "./arry/questao-9A.js";
 import { queste2 as quest2A } from "./arry/questao-2A.js";
+
+//POO
+import { queste6 as quest6P } from "./POO/questao6P.js";
 
 //Comdicional
 document.getElementById("Q1")?.addEventListener("click",quest1C)
@@ -24,4 +24,4 @@ document.getElementById("Q6")?.addEventListener("click",quest9A)
 document.getElementById("Q7")?.addEventListener("click",quest2A)
 
 //POO
-document.getElementById("Q")?.addEventListener("click",quest6P)
+document.getElementById("Q9")?.addEventListener("click",quest6P)

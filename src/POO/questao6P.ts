@@ -6,50 +6,73 @@ ele, depois de cadastrar as suas informações, possa usar os métodos disponív
 
 
 
-export function queste6():void{
-class Conta {
-    numero:string
-    nome:string
-    saldo:number
+export function queste6(): void {
+    class Conta {
+        numero: string
+        nome: string
+        saldo: number
 
-    constructor(
-        
-        nume:string,
-        nome:string,
-        saldo:number = 0
-    ){
+        constructor(
 
-        this.numero = nume
-        this.nome = nome
-        this.saldo = saldo
+            nume: string,
+            nome: string,
+            saldo: number = 0
+        ) {
+
+            this.numero = nume
+            this.nome = nome
+            this.saldo = saldo
+
+        }
+
+        AlterarNome(NovoNome: string): any {
+
+            this.nome = NovoNome
+
+        }
+
+        Deposito(NovoValor: number): void {
+
+            this.saldo = this.saldo + NovoValor
+
+        }
+
+        saldoRetirado(retirado: number): void {
+
+            this.saldo = this.saldo - retirado
+
+        }
+
+        Executa(): void {
+            window.alert(`Nome: ${this.nome}| Saldo: ${this.saldo}| Numero Da Conta: ${this.numero}`)
+        }
+
 
     }
 
-    AlterarNome(NovoNome:string): void {
-        
-        this.nome = NovoNome
+    let saldo: number, numero: string, nome: string
+
+    nome = String(prompt("informe o nome: "))
+    numero = String(prompt("informe o numero da conta: "))
+    saldo = Number(prompt("informe do saldo da conta: "))
+
+    let conta = new Conta(nome, numero, saldo)
+    let informações = []
+    let op = String(prompt("esquole una opição 1-(para munda o nome) 2-(colocar dimheiro) 3-(retira dinheiro)"))
+
+    if (op == "1") {
+        let NovoNome = String(prompt("informe o novo nome: "))
+        conta.AlterarNome(NovoNome)
 
     }
-
-    Deposito(NovoValor:number): void {
-
-        this.saldo = this.saldo + NovoValor
-
+    else if (op == "2") {
+        let NovoValor = Number(prompt("informe o novo valora recebido: "))
+        conta.Deposito(NovoValor)
+    }
+    else if (op == "3") {
+        let retirado = Number(prompt("informe o valor retira: "))
+        conta.saldoRetirado(retirado)
     }
 
-    Saldo(retirado:number): void {
-
-        this.saldo = this.saldo - retirado
-
-    }
-
-    Executa():void{
-
-    }
-    
-
-}
-
-let saldo:number,numero:string,nome:string
-
+    conta.Executa()
 }

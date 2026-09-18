@@ -6,7 +6,7 @@ ele, depois de cadastrar as suas informações, possa usar os métodos disponív
 
 
 
-export function queste6(): void {
+export function queste6P(): void {
     class Conta {
         numero: string
         nome: string
@@ -57,22 +57,26 @@ export function queste6(): void {
     saldo = Number(prompt("informe do saldo da conta: "))
 
     let conta = new Conta(nome, numero, saldo)
-    let informações = []
-    let op = String(prompt("esquole una opição 1-(para munda o nome) 2-(colocar dimheiro) 3-(retira dinheiro)"))
+    let informações:Conta [] = []
+    let op = Number(prompt("esquole una opição 1-(para munda o nome) 2-(colocar dimheiro) 3-(retira dinheiro) ou 0-(sair)"))
 
-    if (op == "1") {
+    while( op != 0){
+    if (op == 1) {
         let NovoNome = String(prompt("informe o novo nome: "))
         conta.AlterarNome(NovoNome)
-
     }
-    else if (op == "2") {
+    else if (op == 2) {
         let NovoValor = Number(prompt("informe o novo valora recebido: "))
         conta.Deposito(NovoValor)
     }
-    else if (op == "3") {
+    else if (op == 3) {
         let retirado = Number(prompt("informe o valor retira: "))
         conta.saldoRetirado(retirado)
     }
+    op = Number(prompt("esquole una opição 1-(para munda o nome) 2-(colocar dimheiro) 3-(retira dinheiro) ou 0-(sair)"))
 
-    conta.Executa()
+    }
+    for(let conta of informações){
+        conta.Executa()
+    }
 }

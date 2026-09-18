@@ -7,6 +7,7 @@ A função deve:
 ● Arredondar a média para duas casas decimais.
 ● Retornar o valor da média.*/
 
+export function quest4A():void{
 function calcular_media(notas: number[]): number {
   let soma = 0;
 
@@ -17,3 +18,4 @@ function calcular_media(notas: number[]): number {
 
 
 console.log(calcular_media([700, 800, 650, 900]));
+}

@@ -3,7 +3,7 @@
 ● ‘Primeiro é maior’, caso o primeiro seja maior que o segundo;
 ● ‘Segundo maior’, caso o segundo seja maior que o primeiro.*/
 
-export function queste4(): void{
+export function queste4C(): void{
 let nm2:number = Number(prompt("informe o primeiro numero: "))
 let nm3:number = Number(prompt("informe o segundo numero: "))
 

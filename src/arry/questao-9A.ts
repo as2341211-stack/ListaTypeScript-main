@@ -9,7 +9,7 @@ contidos nesse intervalo (inclusive o início e o fim).
 a lista criada.
  Imprima no console apenas os números que são múltiplos e divisores da sua idade.
  Ao final, exiba a quantidade total de números que foram impressos. */
-export function queste9():void{
+export function quest9A():void{
 function gerarIntervaloFiltrado(inicio: number, fim: number) {
   if (inicio > fim) {
     let temp = inicio;

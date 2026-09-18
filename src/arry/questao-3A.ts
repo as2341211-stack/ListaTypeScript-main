@@ -7,6 +7,7 @@ Crie uma função chamada gerar_lista_compras() que não recebe argumentos. A fu
 ● Permitir que o usuário apresente quantos itens há na lista.
 ● Permitir que o usuário remova itens da lista.*/
 
+export function quest3A():void{
 function gerar_lista_compras() {
   let lista: string[] = [];
   let opcao = "";
@@ -31,3 +32,4 @@ function gerar_lista_compras() {
   }
 }
 gerar_lista_compras()
+}

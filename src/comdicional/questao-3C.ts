@@ -4,7 +4,7 @@
 3 - Multiplicação
 4 - Divisão
 Use switch...Case*/
-export function queste3():void{
+export function queste3C():void{
 let val1:number = Number(prompt("informe o primero numero: "))
 let val2:number = Number(prompt("informe o segundo numero: "))
 let opcao:number = Number(prompt("informe a opiçao  1-Soma, 2-Subtração, 3-Multiplicação, 4-Divisão "))

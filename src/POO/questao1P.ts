@@ -2,7 +2,7 @@
  Atributos: Cor, circunferência, material
  Métodos: trocaCor e mostraCor*/
 
-export function queste1(): void {
+export function queste1P(): void {
     class Bola {
         Cor: string
         circunferencia: number

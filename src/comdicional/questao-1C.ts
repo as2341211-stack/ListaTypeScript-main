@@ -2,7 +2,7 @@
 //  Par ou Ímpar
 //  Positivo ou Negativo 
 
-export function queste1():void{
+export function queste1C():void{
 
 let numero1:number = Number(prompt(" informe o numero : "))
 

@@ -7,7 +7,7 @@ d) Calcule e mostre a soma das notas.
 e) Calcule e mostre a média das notas.
 f) Calcule e mostre a quantidade de notas acima da média calculada.*/
 
-export function queste2():void{
+export function queste2A():void{
 let notas: number[] = [];
 let soma1 = 0;
 

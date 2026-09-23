@@ -1,4 +1,4 @@
-var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m;
+var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o;
 //Comdicional
 import { quest1C as quest1C } from "./comdicional/questao-1C.js";
 import { quest2C as quest2C } from "./comdicional/questao-2C.js";
@@ -14,6 +14,7 @@ import { quest6P as quest6P } from "./POO/questao6P.js";
 import { quest7P as quest7P } from "./POO/questao7P.js";
 import { quest8P as quest8P } from "./POO/questao8P.js";
 import { quest9P as quest9P } from "./POO/questao9P.js";
+import { quest10P as quest10P } from "./POO/questao10P.js";
 //Comdicional
 (_a = document.getElementById("Q1")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", quest1C);
 (_b = document.getElementById("Q2")) === null || _b === void 0 ? void 0 : _b.addEventListener("click", quest2C);
@@ -28,4 +29,5 @@ import { quest9P as quest9P } from "./POO/questao9P.js";
 (_j = document.getElementById("Q")) === null || _j === void 0 ? void 0 : _j.addEventListener("click", quest6P);
 (_k = document.getElementById("Q")) === null || _k === void 0 ? void 0 : _k.addEventListener("click", quest7P);
 (_l = document.getElementById("Q")) === null || _l === void 0 ? void 0 : _l.addEventListener("click", quest8P);
-(_m = document.getElementById("Q9")) === null || _m === void 0 ? void 0 : _m.addEventListener("click", quest9P);
+(_m = document.getElementById("Q")) === null || _m === void 0 ? void 0 : _m.addEventListener("click", quest9P);
+(_o = document.getElementById("Q9")) === null || _o === void 0 ? void 0 : _o.addEventListener("click", quest10P);

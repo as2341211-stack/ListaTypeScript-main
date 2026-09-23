@@ -50,7 +50,7 @@ export function quest10P():void {
             
             this.Idade= NovaIdade
         }
-        get humor():string{
+        get humor(){
             let Calculor = this.Saude +(10 - this.Fome)/2
             if(8.0<= Calculor && 10.0 >= Calculor){
                 return(`Muito Feliz`)
@@ -58,15 +58,42 @@ export function quest10P():void {
             else if(5.0<= Calculor && 7.9>= Calculor){
                 return(`Neutro / Ok`)
             }
-            else if(50 > Calculor){
+            else if(5.0 > Calculor){
                 return(`Triste / Transtornado`)
             }
         }
     }
-    let no:string,sau:number,fo:number,ida:number
-
+    let no:string,sau:number,fo:number,ida:number,NovoNome:string,NovaFome:number,NovaSaude:number,NovaIdade:number
+    
     no = String(prompt("Informe o nome: "))
     sau = Number(prompt("Informe a saude: "))
     fo = Number(prompt("informe a fome: "))
     ida = Number(prompt("informe a idade: "))
+    let bixinho = new Tamagushi(no,sau,fo,ida)
+    let tamagushi:Tamagushi [] = []
+    tamagushi.push(bixinho)
+    let op = String(prompt("Que munda (  1- O nome | 2- o saude | 3- a fome| 4- a idade ) ou s para sim e n para não ")).toUpperCase()
+    while( op != "N"){
+        if(op == "1"){
+            NovoNome = String(prompt("Novo nome:"))
+            bixinho.AlteraNome(NovoNome)
+
+        }
+        else if(op == "2"){
+            NovaFome = Number(prompt("Novo fome:"))
+            bixinho.AlteraFome(NovaFome)
+
+        }
+        else if(op == "3"){
+            NovaSaude = Number(prompt("Novo saude:"))
+            bixinho.AlteraSaude(NovaSaude)
+
+        }
+        else if(op == "4"){
+            NovaIdade = Number(prompt("Novo idade:"))
+            bixinho.AlteraIdade(NovaIdade)
+
+        }
+        
+    }
 }

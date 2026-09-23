@@ -15,6 +15,7 @@ import { quest6P as quest6P } from "./POO/questao6P.js";
 import { quest7P as quest7P } from "./POO/questao7P.js";
 import { quest8P as quest8P } from "./POO/questao8P.js";
 import { quest9P as quest9P } from "./POO/questao9P.js";
+import { quest10P as quest10P } from "./POO/questao10P.js";
 
 
 
@@ -34,4 +35,5 @@ document.getElementById("Q8")?.addEventListener("click",quest3A)
 document.getElementById("Q")?.addEventListener("click",quest6P)
 document.getElementById("Q")?.addEventListener("click",quest7P)
 document.getElementById("Q")?.addEventListener("click",quest8P)
-document.getElementById("Q9")?.addEventListener("click", quest9P)
+document.getElementById("Q")?.addEventListener("click",quest9P)
+document.getElementById("Q9")?.addEventListener("click",quest10P)

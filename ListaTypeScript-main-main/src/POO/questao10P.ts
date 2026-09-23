@@ -34,20 +34,33 @@ export function quest10P():void {
 
         }
 
-        AlteraNome():void{
-
+        AlteraNome(NovoNome:string):void{
+            
+            this.Nome= NovoNome
         }
-        AlteraFome():void{
-
+        AlteraFome(NovaFome:number):void{
+            
+            this.Fome = NovaFome
         }
-        AlteraSaude():void{
-
+        AlteraSaude(NovaSaude:number):void{
+            
+            this.Saude = NovaSaude
         }
-        AlteraIdade():void{
-
+        AlteraIdade(NovaIdade:number):void{
+            
+            this.Idade= NovaIdade
         }
-        get humor():{
+        get humor():string{
             let Calculor = this.Saude +(10 - this.Fome)/2
+            if(8.0<= Calculor && 10.0 >= Calculor){
+                return(`Muito Feliz`)
+            }
+            else if(5.0<= Calculor && 7.9>= Calculor){
+                return(`Neutro / Ok`)
+            }
+            else if(50 > Calculor){
+                return(`Triste / Transtornado`)
+            }
         }
     }
     let no:string,sau:number,fo:number,ida:number

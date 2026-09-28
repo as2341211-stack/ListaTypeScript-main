@@ -19,11 +19,20 @@ export function quest7P(): void {
         }
 
         Percentual(Novosalario: number): void {
-            this.salario = Novosalario + this.salario
+            this.salario = Novosalario*this.salario
         }
 
         Exiber(): void {
-            window.alert(``)
+           window.alert(
+            `📄 AUMENTO SALARIAL CONCLUÍDO\n` +
+            `----------------------------------------\n` +
+            `👤 Funcionário: ${this.nome}\n` +
+            `💼 Cargo Ocupado: ${this.cargo}\n` +
+            `📈 Aumento Aplicado: ${this.Percentual}%\n` +
+            `----------------------------------------\n` +
+            `💰 NOVO SALÁRIO: R$ ${this.salario.toFixed(2)}\n` +
+            `----------------------------------------`
+        )
         }
     }
 

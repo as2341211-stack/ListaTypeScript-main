@@ -50,7 +50,7 @@ export function quest10P():void {
             
             this.Idade= NovaIdade
         }
-        get humor(){
+        humor(){
             let Calculor = this.Saude +(10 - this.Fome)/2
             if(8.0<= Calculor && 10.0 >= Calculor){
                 return(`Muito Feliz`)

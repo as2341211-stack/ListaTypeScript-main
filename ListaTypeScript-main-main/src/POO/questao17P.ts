@@ -9,53 +9,109 @@ quem almoçou no dia, mostrando mensagens personalizadas para cada tipo de usuá
 método comum de identificação, além de exibir a quantidade total de acessos de alunos e servidores. */
 
 
-export function quest17P():void {
 
-abstract class Usuario{
-   private _matricula:string
-    private _nome:string
 
-    constructor(matri:string,no:string){
+export function quest17P(): void {
 
-        this._matricula = matri
-        this._nome = no
+    abstract class Usuario {
+        private _id: number
+        private _nome: string
 
+        constructor(id: number, nome: string) {
+            this._id = id
+            this._nome = nome
+        }
+
+        public get id(): number {
+            
+            return this._id
+        }
+
+        public get nome(): string {
+            
+            return this._nome
+        }
+
+        public abstract identificar(): string
     }
 
+    class Aluno extends Usuario {
+        private _curso: string
 
-    public get matri():string{
-        
-        return this._matricula
-    
+        constructor(id: number, nome: string, curso: string) {
+            super(id, nome)
+            this._curso = curso
+        }
+
+        public identificar(): string {
+            return `Aluno: ${this.nome} | Curso: ${this._curso}`
+        }
     }
 
-    public get no():string{
+    class Servidor extends Usuario {
+        private _departamento: string
 
-        return this._nome
-    }
-    abstract Identificacao(): string 
-    
-}
+        constructor(id: number, nome: string, departamento: string) {
+            super(id, nome)
+            this._departamento = departamento
+        }
 
-class Aluno extends Usuario{
-    private _curso:string
-
-    constructor(matri:string,no:string,cur:string){
-        super(matri,no)
-        this._curso= cur
-
+        public identificar(): string {
+            return `Servidor: ${this.nome} | Departamento: ${this._departamento}`
+        }
     }
 
-    public get cur():string{
-        
-        return this._curso
+    let historico: Usuario[] = []
 
+    let opcao = ""
+
+    while (opcao != "0") {
+
+        opcao = String(prompt("1 - Cadastrar aluno 2 - Cadastrar servidor 0 - Encerrar"))
+
+        if (opcao == "1") {
+
+            let id = Number(prompt("ID do aluno:"))
+            let nome = String(prompt("Nome do aluno:"))
+            let curso = String(prompt("Curso:"))
+
+            let aluno = new Aluno(id, nome, curso)
+            historico.push(aluno)
+
+            window.alert("Acesso registrado!")
+
+        } else if (opcao == "2") {
+
+            let id = Number(prompt("ID do servidor:"))
+            let nome = String(prompt("Nome do servidor:"))
+            let departamento = String(prompt("Departamento:"))
+
+            let servidor = new Servidor(id, nome, departamento)
+            historico.push(servidor)
+
+            window.alert("Acesso registrado!")
+        }
     }
 
+    let totalAlunos = 0
+    let totalServidores = 0
 
-}
+    let resultado = "=== PESSOAS QUE ALMOÇARAM ===\n\n"
 
-class 
+    for (let usuario of historico) {
 
+        resultado = resultado + usuario.identificar() + "\n"
 
+        if (usuario instanceof Aluno) {
+            totalAlunos++
+        } else if (usuario instanceof Servidor) {
+            totalServidores++
+        }
+
+    }
+    resultado = resultado + "-----------------------------\n"
+    resultado = resultado + `Total de alunos: ${totalAlunos}\n`
+    resultado = resultado + `Total de servidores: ${totalServidores}`
+
+    window.alert(resultado)
 }

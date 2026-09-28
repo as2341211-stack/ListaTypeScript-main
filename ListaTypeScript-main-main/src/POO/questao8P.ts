@@ -19,10 +19,16 @@ class funcionario{
 
     }
 
-    Exibir(): void{
-        
-        window.alert(`Nome: ${this.nome}| Cargo: ${this.cargo}| Salario: ${this.salario.toFixed(2)}`)
-    }
+    Exibir(): void {
+    window.alert(
+        `📄 COMPROVANTE DE CADASTRO\n` +
+        `----------------------------------------\n` +
+        `👤 Nome: ${this.nome}\n` +
+        `💼 Cargo: ${this.cargo}\n` +
+        `💰 Salário: R$ ${this.salario.toFixed(2)}\n` +
+        `----------------------------------------`
+    )
+}
 
 }
 let no:string,sala:number,cargo:string

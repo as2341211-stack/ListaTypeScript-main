@@ -44,10 +44,18 @@ export function quest6P(): void {
         }
 
         Executa(): void {
-            window.alert(`Nome: ${this.nome}| Saldo: ${this.saldo}| Numero Da Conta: ${this.numero}`)
+            window.alert(
+            `🏦 COMPROVANTE DE CONTA BANCÁRIA\n` +
+            `----------------------------------------\n` +
+            `👤 Titular: ${this.nome}\n` +
+            `🔢 Nº da Conta: ${this.numero}\n` +
+            `----------------------------------------\n` +
+            `💰 SALDO ATUAL: R$ ${this.saldo.toFixed(2)}\n` +
+            `----------------------------------------`
+                
+            )
+            
         }
-
-
     }
 
     let saldo: number, numero: string, nome: string

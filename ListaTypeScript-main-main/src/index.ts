@@ -11,29 +11,37 @@ import { quest3A as quest3A } from "./arry/questao-3A.js";
 import { quest9A as quest9A } from "./arry/questao-9A.js";
 
 //POO
-import { quest6P as quest6P } from "./POO/questao6P.js";
-import { quest7P as quest7P } from "./POO/questao7P.js";
-import { quest8P as quest8P } from "./POO/questao8P.js";
-import { quest9P as quest9P } from "./POO/questao9P.js";
-import { quest10P as quest10P } from "./POO/questao10P.js";
+import { quest6P } from "./POO/questao6P.js";
+import { quest7P } from "./POO/questao7P.js";
+import { quest8P } from "./POO/questao8P.js";
+import { quest9P } from "./POO/questao9P.js";
+import { quest10P } from "./POO/questao10P.js";
+import { quest11P } from "./POO/questao11P.js";
+import { quest12P } from "./POO/questao12P.js";
+import { quest13P } from "./POO/questao13P.js";
+import { quest14P } from "./POO/questao14P.js";
 
 
 
 //Comdicional
-document.getElementById("Q1")?.addEventListener("click",quest1C)
-document.getElementById("Q2")?.addEventListener("click",quest2C)
-document.getElementById("Q3")?.addEventListener("click",quest3C)
-document.getElementById("Q4")?.addEventListener("click",quest4C)
+document.getElementById("Q")?.addEventListener("click",quest1C)
+document.getElementById("Q")?.addEventListener("click",quest2C)
+document.getElementById("Q")?.addEventListener("click",quest3C)
+document.getElementById("Q")?.addEventListener("click",quest4C)
 
 //arry
-document.getElementById("Q5")?.addEventListener("click",quest1A)
-document.getElementById("Q6")?.addEventListener("click",quest2A)
-document.getElementById("Q7")?.addEventListener("click",quest9A)
-document.getElementById("Q8")?.addEventListener("click",quest3A)
+document.getElementById("Q")?.addEventListener("click",quest1A)
+document.getElementById("Q")?.addEventListener("click",quest2A)
+document.getElementById("Q")?.addEventListener("click",quest9A)
+document.getElementById("Q")?.addEventListener("click",quest3A)
 
 //POO
 document.getElementById("Q")?.addEventListener("click",quest6P)
 document.getElementById("Q")?.addEventListener("click",quest7P)
 document.getElementById("Q")?.addEventListener("click",quest8P)
 document.getElementById("Q")?.addEventListener("click",quest9P)
-document.getElementById("Q9")?.addEventListener("click",quest10P)
+document.getElementById("Q")?.addEventListener("click",quest10P)
+document.getElementById("Q")?.addEventListener("click",quest11P)
+document.getElementById("Q")?.addEventListener("click",quest12P)
+document.getElementById("Q1")?.addEventListener("click",quest13P)
+document.getElementById("Q2")?.addEventListener("click",quest14P)

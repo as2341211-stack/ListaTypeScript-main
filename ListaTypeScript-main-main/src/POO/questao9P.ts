@@ -23,12 +23,17 @@ class Estoque{
         return this.preco*this.quantidade
 
     }
-
-    Exibir(cal:number):void {
-        
-        window.alert(`Nome: ${this.nome} | Preço: ${this.preco.toFixed(2)} | Quantidade e estoque: ${this.quantidade} | Valor e produto: ${cal.toFixed(2)}`)
-
-    }
+    Exibir(cal:number):void{
+    
+        window.alert(`🛒 DETALHES DO PRODUTO\n` +
+            `----------------------------------------\n` +
+            `📦 Produto: ${this.nome}\n` +
+            `💰 Preço Unitário: R$ ${this.preco.toFixed(2)}\n` +
+            `🔢 Em Estoque: ${this.quantidade} unidade(s)\n` +
+            `----------------------------------------\n` +
+            `💵 VALOR EM ESTOQUE: R$ ${cal.toFixed(2)}\n` +
+            `----------------------------------------`)
+        }
 }
     let no:string,preco:number,quanto:number,valorpro:number
     let op = ""
